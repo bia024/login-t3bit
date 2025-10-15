@@ -5,10 +5,12 @@
 }
 
 body {
-  background-color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
 }
 
-main {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,50 +19,84 @@ main {
 
 img {
   width: 40vw;
-  height: 50vh;
-  max-width: 500px;
+  height: 70vh;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .formulario {
-  width: 40vw;
-  height: 50vh;
   background-color: white;
-  max-width: 500px;
+  width: 40vw;
+  height: 70vh;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.formulario {
   padding: 3rem;
+  width: 40vw;
+  height: 70vh;
+  background-color: white;
 }
 .formulario h1 {
-  color: blue;
+  color: #0052cc;
+  margin-bottom: 0.5rem;
 }
 .formulario p {
-  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 .formulario form {
   display: flex;
   flex-direction: column;
 }
-.formulario input {
-  padding: 0.7rem;
-  border: solid rgba(128, 128, 128, 0.484) 1px;
+.formulario form label {
+  margin-bottom: 0.3rem;
+}
+.formulario form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 1.2rem;
   outline: none;
 }
-.formulario button {
-  margin-top: 1rem;
-  background-color: rgba(60, 60, 232, 0.925);
+.formulario form button {
+  background-color: #0052cc;
   color: white;
-  padding: 0.7rem;
   border: none;
+  padding: 0.9rem;
   border-radius: 5px;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
 }
-.formulario button:hover {
-  background-color: red;
-  transition: 0.3s;
+.formulario form .cadastro {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.formulario form .cadastro a {
+  color: #0052cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+.formulario form .cadastro a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 700px) {
   img {
     display: none;
+  }
+  .formulario {
+    padding: 2rem;
+    width: 80vw;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .formulario h1 {
+    text-align: center;
+  }
+  .formulario p {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
