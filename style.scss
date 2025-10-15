@@ -105,17 +105,22 @@ img{
         display: none;
     }
     .formulario{
-        padding: 2rem;
+        padding: 1rem;
         width: 80vw;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
 
         h1{
+            // font-weight: 200;
             text-align: center;
         }
         
         p{
             text-align: center;
+        }
+
+        label {
+            display: none;
         }
     }
 }
